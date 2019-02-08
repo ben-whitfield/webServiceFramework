@@ -1,0 +1,11 @@
+# OS X
+.DS_Store
+
+*node_modules*
+*.tern-port
+*.log
+.tern-project
+.tags
+
+#vscode
+.vscode
