@@ -1,11 +1,12 @@
 {
   "name": "webserviceframework",
   "version": "1.0.0",
+  "private": true,
   "description": "A basic web service setup",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "devstart": "nodemon app.js",
+    "start": "node ./bin/www",
+    "devstart": "node ./bin/www",
     "test": "test"
   },
   "repository": {
@@ -19,7 +20,12 @@
   },
   "homepage": "https://github.com/benwdev/webServiceFramework#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "^4.16.4",
+    "http-errors": "~1.6.2",
+    "morgan": "~1.9.0",
+    "pug": "2.0.0-beta11"
   },
   "devDependencies": {
     "nodemon": "^1.18.10"
